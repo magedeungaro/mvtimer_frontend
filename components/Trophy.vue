@@ -1,13 +1,13 @@
 <template>
   <img
-    class="VuetifyLogo"
-    alt="Vuetify Logo"
-    src="/vuetify-logo.svg"
+    class="trophy"
+    alt="MVP Trophy"
+    src="/mvp trophy.svg"
   >
 </template>
 
 <style>
-.VuetifyLogo {
+.trophy {
   height: 180px;
   width: 180px;
   transform: rotateY(560deg);
