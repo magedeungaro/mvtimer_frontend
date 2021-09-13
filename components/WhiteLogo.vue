@@ -1,5 +1,6 @@
 <template lang="pug">
-  img(url="mvt_white.svg").mvt-logo
+  .container.flex-column
+    img(src="/mvt_white.svg").mvt-logo
 </template>
 
 <style>

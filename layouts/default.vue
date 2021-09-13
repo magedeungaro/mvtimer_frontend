@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app light>
     <v-main>
       <v-container>
         <Nuxt />
@@ -36,3 +36,17 @@ export default {
   },
 }
 </script>
+
+<style lang="scss">
+body {
+  footer,
+  .navbar {
+    font-family: 'Nunito', sans-serif !important;
+  }
+
+  .container {
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+</style>

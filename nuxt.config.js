@@ -18,7 +18,23 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+
+      {
+        rel: 'preconnect',
+        href: 'https://fonts.googleapis.com/',
+      },
+      {
+        rel: 'preconnect',
+        href: 'https://fonts.gstatic.com/',
+        crossorigin: true,
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Lato&family=Nunito:wght@300&display=swap',
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -61,8 +77,9 @@ export default {
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
+    treeShake: true,
     theme: {
-      dark: true,
+      dark: false,
       themes: {
         dark: {
           primary: colors.blue.darken2,
@@ -70,6 +87,15 @@ export default {
           secondary: colors.amber.darken3,
           info: colors.teal.lighten1,
           warning: colors.amber.base,
+          error: colors.deepOrange.accent4,
+          success: colors.green.accent3,
+        },
+        light: {
+          primary: '#3A6073',
+          accent: '#DC5349',
+          secondary: '#454545',
+          info: colors.teal.lighten1,
+          warning: '#FFC700',
           error: colors.deepOrange.accent4,
           success: colors.green.accent3,
         },
