@@ -25,3 +25,23 @@ $padding-nav-container: 3rem;
   justify-content: center;
   align-items: center;
 }
+
+@mixin gradient {
+  background: rgb(22, 34, 42);
+  background: -moz-linear-gradient(
+    240deg,
+    rgba(22, 34, 42, 1) 0%,
+    rgba(58, 96, 115, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    240deg,
+    rgba(22, 34, 42, 1) 0%,
+    rgba(58, 96, 115, 1) 100%
+  );
+  background: linear-gradient(
+    240deg,
+    rgba(22, 34, 42, 1) 0%,
+    rgba(58, 96, 115, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#16222a",endColorstr="#3a6073",GradientType=1);
+}
