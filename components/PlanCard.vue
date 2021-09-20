@@ -1,14 +1,14 @@
 <template>
-  <v-card width="350" style="position: relative;">
+  <v-card class="card">
     <v-container class="container">
       <img :src="tierData.img" :alt="`Image for the tier ${tierData.title}`">
       <h2>Tier {{tierData.title}}</h2>
       <ul v-for="description in tierData.desc" :key="description">
         <li>{{description}}</li>
       </ul>
-      <p style="text-align: center;">
-        <strong style="font-size: 30px;">R${{tierData.price}}</strong>
-        <span style="font-size: 10px;">/Mês</span>
+      <p class="price">
+        <strong>R${{tierData.price}}</strong>
+        <span>/Mês</span>
       </p>
       <div class="confirm-btn">
         <v-btn large color="accent" rounded block>Assinar</v-btn>
@@ -37,6 +37,10 @@ img {
   right: -25px;
   top: -25px;
 }
+.card{
+  position: relative;
+  width: 350px;
+}
 h2 {
   padding: 27px 0;
 }
@@ -46,11 +50,20 @@ li {
 p {
   padding: 100px 0 52px 0;
 }
+.price{
+  text-align: center;
+}
+.price strong{
+  font-size: 30px;
+}
+.price span{
+  font-size: 10px;
+}
 .confirm-btn {
   font-weight: bold;
   padding: 0 0 60px 0;
 }
 ul {
-  list-style-image: ;
+  list-style-image: url('static/check.svg');
 }
 </style>
