@@ -45,3 +45,11 @@ $padding-nav-container: 3rem;
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#16222a",endColorstr="#3a6073",GradientType=1);
 }
+
+@mixin box-shadow {
+  box-shadow: 5px 5px 5px rgb(0 0 0 / 10%);
+}
+
+@mixin border-radius {
+  border-radius: .6rem;
+}

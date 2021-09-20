@@ -47,6 +47,7 @@ body {
   .container {
     margin: 0 auto;
     padding: 0;
+    width: 85%;
   }
 
   a {
