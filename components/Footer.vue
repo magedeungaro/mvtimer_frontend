@@ -1,12 +1,11 @@
 <template lang="pug">
   v-footer(:class="{home_page_footer: isHomePage}").footer
-    .container
-      .nav-footer-container 
-        span MVT • Most  Valuable Timer &copy; {{ new Date().getFullYear() }}
-      .nav-footer-container 
-        NavFooter
-      .nav-footer-container
-        Logo
+    .nav-footer-container 
+      span MVT • Most  Valuable Timer &copy; {{ new Date().getFullYear() }}
+    .nav-footer-container 
+      NavFooter
+    .nav-footer-container
+      Logo
       
 </template>
 
@@ -23,17 +22,15 @@ export default {
 
 <style lang="scss" scoped>
 body footer.footer {
+  @include container-flex-center(row);
   padding: 15px;
   font-size: 1rem;
   font-weight: bold;
   background-color: $footer-background-color;
+  justify-content: space-around;
   &.home_page_footer {
     background-color: $homepage-footer-background-color;
   }
-}
-
-.container {
-  @include container-flex-center(row);
 }
 
 .nav-footer-container {

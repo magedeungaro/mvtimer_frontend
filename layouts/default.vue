@@ -1,5 +1,6 @@
 <template>
   <v-app light>
+    <Gradient />
     <v-main>
       <v-container>
         <Nuxt />
@@ -10,7 +11,9 @@
 </template>
 
 <script>
+import Gradient from '~/components/Gradient.vue'
 export default {
+  components: { Gradient },
   data() {
     return {
       clipped: false,
@@ -52,6 +55,10 @@ body {
 
   a {
     text-decoration: none;
+    &:hover {
+      color: $gradient-dark;
+      text-decoration: underline;
+    }
   }
 }
 </style>

@@ -1,5 +1,5 @@
 <template lang="pug">
-  .container
+  div
     h1 Hi
     <PlanCard :tierData="this.testTierObject"/>
     <Trophy />
