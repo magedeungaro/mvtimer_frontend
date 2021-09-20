@@ -55,6 +55,10 @@ body {
 
   a {
     text-decoration: none;
+    &:hover {
+      color: $gradient-dark;
+      text-decoration: underline;
+    }
   }
 }
 </style>
