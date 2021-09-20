@@ -51,6 +51,6 @@ p {
   padding: 0 0 60px 0;
 }
 ul {
-  list-style-image: url('assets/Check_icon.svg.png');
+  list-style-image: ;
 }
 </style>
