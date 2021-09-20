@@ -1,6 +1,6 @@
 <template lang="pug">
   .container
-    img(src="/mvt_white.svg").mvt-logo
+    img(src="/mvt.svg").mvt-logo
 </template>
 
 <style lang="scss" scoped>

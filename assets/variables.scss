@@ -9,3 +9,11 @@ $body-font-family: 'Lato', sans-serif;
 //scoped
 $footer-background-color: white;
 $homepage-footer-background-color: #f8f8f8;
+$logo-width: 180px;
+$logo-height: 50px;
+
+//mixins
+@mixin flex($direction) {
+  display: flex;
+  flex-direction: $direction;
+}

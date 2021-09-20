@@ -1,8 +1,12 @@
 <template lang="pug">
   v-footer(:class="{home_page_footer: isHomePage}").footer
     .container
-      <WhiteLogo/>
-      span MVT • Most  Valuable Timer &copy; {{ new Date().getFullYear() }}
+      div 
+        span MVT • Most  Valuable Timer &copy; {{ new Date().getFullYear() }}
+      div 
+      div
+        <Logo/>
+      
 </template>
 
 <script>
@@ -25,5 +29,9 @@ body footer.footer {
   &.home_page_footer {
     background-color: $homepage-footer-background-color;
   }
+}
+
+.container {
+  @include flex(row);
 }
 </style>
