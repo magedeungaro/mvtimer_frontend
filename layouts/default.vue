@@ -1,5 +1,6 @@
 <template>
   <v-app light>
+    <Gradient />
     <v-main>
       <v-container>
         <Nuxt />
@@ -10,7 +11,9 @@
 </template>
 
 <script>
+import Gradient from '~/components/Gradient.vue'
 export default {
+  components: { Gradient },
   data() {
     return {
       clipped: false,
@@ -47,6 +50,7 @@ body {
   .container {
     margin: 0 auto;
     padding: 0;
+    width: 85%;
   }
 
   a {

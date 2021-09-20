@@ -1,5 +1,5 @@
 <template lang="pug">
-.container
+.container.container-list
   ul
     li 
       NuxtLink(to="/plans") Planos
@@ -17,5 +17,9 @@ ul {
 li {
   display: inline-block;
   padding-left: $padding-li;
+}
+
+.container.container-list {
+  width: 100%;
 }
 </style>
