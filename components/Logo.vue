@@ -1,11 +1,11 @@
 <template lang="pug">
   .container
-    img(src="/mvt.svg").mvt-logo
+    NuxtLink(to="/")
+      img(src="/mvt.svg").mvt-logo
 </template>
 
 <style lang="scss" scoped>
 .mvt-logo {
   height: $logo-height;
-  width: $logo-width;
 }
 </style>
