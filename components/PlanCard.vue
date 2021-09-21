@@ -3,9 +3,10 @@
     <v-container class="container">
       <img :src="tierData.img" :alt="`Image for the tier ${tierData.title}`">
       <h2>Tier {{tierData.title}}</h2>
-      <ul v-for="description in tierData.desc" :key="description">
-        <li>{{description}}</li>
+      <ul>
+        <li v-for="description in tierData.description" :key="description">{{description}}</li>
       </ul>
+
       <p class="price">
         <strong>R${{tierData.price}}</strong>
         <span>/Mês</span>

@@ -3,6 +3,7 @@
     h1 Hi
     <PlanCard :tierData="this.testTierObject"/>
     <Trophy />
+    NuxtLink(to="/plans") Plans
 </template>
 
 <script>
