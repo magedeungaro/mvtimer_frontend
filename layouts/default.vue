@@ -2,6 +2,7 @@
   <v-app light>
     <Gradient />
     <v-main>
+      <Navbar />
       <v-container>
         <Nuxt />
       </v-container>
@@ -50,13 +51,19 @@ body {
   .container {
     margin: 0 auto;
     padding: 0;
-    width: 85%;
   }
 
   a {
     text-decoration: none;
     &:hover {
       color: $gradient-dark;
+      text-decoration: underline;
+    }
+  }
+
+  .accent-link a {
+    color: $accent2;
+    &:hover {
       text-decoration: underline;
     }
   }
