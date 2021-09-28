@@ -5,7 +5,7 @@
     .nav-footer-container 
       NavList(:linkArray="links")
     .nav-footer-container
-      Logo
+      Logo(src="/mvt.svg")
       
 </template>
 

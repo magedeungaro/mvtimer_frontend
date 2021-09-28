@@ -1,6 +1,6 @@
 <template lang="pug">
   .container.navbar
-    WhiteLogo
+    Logo(src="/mvt_white.svg")
     NavList(:linkArray="links").float-right.accent-link
       
 </template>
@@ -35,10 +35,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.float-right {
-  float: right;
-}
-
 .navbar {
   padding: 15px 0;
 }

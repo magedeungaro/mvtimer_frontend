@@ -44,7 +44,8 @@ export default {
 <style lang="scss">
 body {
   footer,
-  .navbar {
+  .navbar,
+  .btn {
     font-family: 'Nunito', sans-serif !important;
   }
 
@@ -55,6 +56,7 @@ body {
 
   a {
     text-decoration: none;
+    transition: 0.5s;
     &:hover {
       color: $gradient-dark;
       text-decoration: underline;

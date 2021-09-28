@@ -1,7 +1,7 @@
 <template lang="pug">
-  NuxtLink(to="/")
-    img(:src="src").mvt-logo
+  img(:src="src")
 </template>
+
 <script>
 export default {
   props: {
@@ -11,7 +11,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.mvt-logo {
-  height: $logo-height;
+img {
+  max-width: 55vw;
+  margin-top: -400px;
+  margin-right: -5vw;
 }
 </style>
