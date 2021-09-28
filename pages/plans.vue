@@ -1,5 +1,5 @@
 <template>
-  <div style="display: flex; justify-content: space-around; align-items: center;">
+  <div class="plan-card-container">
     <PlanCard v-for="tier in tiers" :key="tier.index" :tierData="tier"/>
   </div>  
 </template>
@@ -8,24 +8,6 @@
 export default {
   data() {
     return {
-      testTierObjectArr: [{
-        img: "http://www.mostvaluabletimer.com/img/mvp/70.gif",
-        desc: ['babu', 'ronaldo', 'nhac', 'nha'],
-        title: 'Slime',
-        price: '5,99'
-      },
-      {
-        img: "http://www.mostvaluabletimer.com/img/mvp/70.gif",
-        desc: ['babu', 'ronaldo', 'nhac', 'nha'],
-        title: 'Slime',
-        price: '5,99'
-      },
-      {
-        img: "http://www.mostvaluabletimer.com/img/mvp/70.gif",
-        desc: ['babu', 'ronaldo', 'nhac', 'nha'],
-        title: 'Slime',
-        price: '5,99'
-      }],
       tiers: []
     }
   },
@@ -35,6 +17,10 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.plan-card-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 </style>
