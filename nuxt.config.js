@@ -65,7 +65,20 @@ export default {
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    headers: {
+      common: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      delete: {},
+      get: {},
+      head: {},
+      post: {},
+      put: {},
+      patch: {}
+    }
+  },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
