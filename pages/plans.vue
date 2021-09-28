@@ -1,19 +1,19 @@
 <template>
   <div class="plan-card-container">
-    <PlanCard v-for="tier in tiers" :key="tier.index" :tierData="tier"/>
-  </div>  
+    <PlanCard v-for="tier in tiers" :key="tier.index" :tierData="tier" />
+  </div>
 </template>
 
 <script>
 export default {
   data() {
     return {
-      tiers: []
+      tiers: [],
     }
   },
   async mounted() {
-    this.tiers = await this.$axios.$get("http://localhost:3000/show_plans")
-  }
+    this.tiers = await this.$axios.$get('http://localhost:3000/show_plans')
+  },
 }
 </script>
 

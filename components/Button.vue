@@ -19,7 +19,7 @@ button {
   margin: 0;
   background-color: $accent;
   color: white;
-  transition: 0.7s;
+  transition: 0.3s;
 
   &:hover {
     background-color: $accent-dark;

@@ -24,7 +24,7 @@ export default {
           desc: 'Rankings',
         },
         {
-          to: '/plans',
+          to: '/privacy',
           desc: 'Política de Privacidade',
         },
       ],
