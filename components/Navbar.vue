@@ -20,7 +20,7 @@ export default {
           desc: 'Rankings',
         },
         {
-          to: '/plans',
+          to: '/login',
           desc: 'Entrar',
         },
       ],

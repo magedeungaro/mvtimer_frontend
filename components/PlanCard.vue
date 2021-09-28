@@ -12,7 +12,7 @@
         span /Mês
 
       .confirm-btn
-        NuxtLink(to="/signin")
+        NuxtLink(to="/signup")
           Button(text="Assinar")
 </template>
 
