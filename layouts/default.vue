@@ -56,17 +56,43 @@ body {
 
   a {
     text-decoration: none;
+  }
+
+  ul li a {
     transition: 0.5s;
+    border: none;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 0px;
+      height: 2px;
+      left: 50%;
+      bottom: 0;
+      background-color: $gradient-dark;
+      transition: all ease-in-out 0.2s;
+      border-radius: 50px;
+    }
     &:hover {
       color: $gradient-dark;
-      text-decoration: underline;
+      &::after {
+        width: 100%;
+        left: 0;
+      }
+    }
+
+    &.no-after {
+      &::after {
+        content: none;
+      }
     }
   }
 
-  .accent-link a {
+  ul.accent-link li a {
     color: $accent2;
-    &:hover {
-      text-decoration: underline;
+    &::after {
+      background-color: $accent2;
     }
   }
 }

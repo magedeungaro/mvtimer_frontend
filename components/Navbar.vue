@@ -1,7 +1,7 @@
 <template lang="pug">
   .container.navbar
     Logo(src="/mvt_white.svg")
-    NavList(:linkArray="links").float-right.accent-link
+    NavList(:linkArray="links").float-right.accent-link 
       
 </template>
 
