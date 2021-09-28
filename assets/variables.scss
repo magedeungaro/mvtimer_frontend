@@ -2,6 +2,10 @@
 //
 // The variables you want to modify
 $accent: #dc5349;
+$accent-dark: #df473c;
+$accent2: #ffcc34;
+$accent2-dark: #e0b32c;
+$accent2-dark2: #4e3f11;
 $gradient-light: rgba(58, 96, 115, 1);
 $gradient-dark: rgba(22, 34, 42, 1);
 
@@ -16,6 +20,8 @@ $logo-width: 180px;
 $logo-height: 50px;
 $padding-li: 2rem;
 $padding-nav-container: 3rem;
+$trophy-dimensions: 510px;
+$trophy-padding: 100px;
 
 //mixins
 @mixin flex($direction) {

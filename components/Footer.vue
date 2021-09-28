@@ -3,15 +3,33 @@
     .nav-footer-container 
       span MVT • Most  Valuable Timer &copy; {{ new Date().getFullYear() }}
     .nav-footer-container 
-      NavFooter
+      NavList(:linkArray="links")
     .nav-footer-container
-      Logo
+      Logo(src="/mvt.svg")
       
 </template>
 
 <script>
 export default {
   name: 'Footer',
+  data() {
+    return {
+      links: [
+        {
+          to: '/plans',
+          desc: 'Planos',
+        },
+        {
+          to: '/plans',
+          desc: 'Rankings',
+        },
+        {
+          to: '/plans',
+          desc: 'Política de Privacidade',
+        },
+      ],
+    }
+  },
   computed: {
     isHomePage() {
       return this.$nuxt.$route.name === 'index'
