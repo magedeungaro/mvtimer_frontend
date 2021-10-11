@@ -1,7 +1,6 @@
-<template>
-  <div class="plan-card-container">
-    <PlanCard v-for="tier in tiers" :key="tier.index" :tierData="tier" />
-  </div>
+<template lang="pug">
+  .plan-card-container
+    PlanCard(v-for="tier in tiers" :key="tier.index" :tierData="tier")
 </template>
 
 <script>
