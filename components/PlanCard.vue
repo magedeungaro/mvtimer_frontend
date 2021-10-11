@@ -5,7 +5,9 @@
         img(:src="tierData.image" :alt="`Image for the tier ${tierData.title}`")
         h2 Tier {{tierData.title}}
         ul
-          li(v-for="description in tierData.description" :key="description") {{description}}
+          li(v-for="description in tierData.description" :key="description") 
+            img(src="check.svg")
+            span {{description}}
         
       p.price
         strong R${{tierData.price}}
@@ -37,11 +39,19 @@ export default {
   width: 80%;
 }
 
-img {
+.plan-info > img {
   position: absolute;
   height: 100px;
   right: -25px;
   top: -25px;
+}
+
+li > img {
+  $pixel: 20px;
+  height: $pixel;
+  widows: $pixel;
+  padding-right: 5px;
+  margin-bottom: -3px;
 }
 .card {
   position: relative;
@@ -72,6 +82,8 @@ li {
   }
 }
 ul {
-  list-style-image: url('static/check.svg');
+  // list-style-image: url('static/check.svg');
+  list-style: none;
+  padding: 0;
 }
 </style>
