@@ -8,6 +8,8 @@ $accent2-dark: #e0b32c;
 $accent2-dark2: #4e3f11;
 $gradient-light: rgba(58, 96, 115, 1);
 $gradient-dark: rgba(22, 34, 42, 1);
+$normal: #454545;
+$normal-50: rgba(69, 69, 69, 0.5);
 
 //globals
 $font-size-root: 18px;
@@ -56,9 +58,9 @@ $trophy-padding: 100px;
 }
 
 @mixin box-shadow {
-  box-shadow: 5px 5px 5px rgb(0 0 0 / 10%);
+  box-shadow: 0px 4px 20px rgb(0 0 0 / 10%);
 }
 
 @mixin border-radius {
-  border-radius: .6rem;
+  border-radius: 0.6rem;
 }

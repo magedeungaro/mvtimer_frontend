@@ -21,8 +21,9 @@ export default {
   },
   data() {
     return {
-      pageNotFound: '404 Not Found',
-      otherError: 'An error occurred',
+      pageNotFound: 'Ops! Parece que esse mapa não existe..',
+      otherError:
+        'Ops, parece que o servidor tomou um debuff. Tente novamente mais tarde ou entre em contato com o suporte.',
     }
   },
   head() {

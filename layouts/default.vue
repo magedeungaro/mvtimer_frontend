@@ -1,7 +1,7 @@
 <template>
   <v-app light>
     <Gradient />
-    <v-main>
+    <v-main class="main">
       <Navbar />
       <v-container>
         <Nuxt />
@@ -43,6 +43,9 @@ export default {
 
 <style lang="scss">
 body {
+  .main {
+    min-height: 100vh !important;
+  }
   footer,
   .navbar,
   .btn {

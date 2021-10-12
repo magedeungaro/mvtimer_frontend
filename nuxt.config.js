@@ -68,16 +68,16 @@ export default {
   axios: {
     headers: {
       common: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
       },
       delete: {},
       get: {},
       head: {},
       post: {},
       put: {},
-      patch: {}
-    }
+      patch: {},
+    },
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
@@ -113,6 +113,9 @@ export default {
           success: colors.green.accent3,
         },
       },
+    },
+    icons: {
+      iconfont: 'fa',
     },
   },
 
